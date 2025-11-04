@@ -6,10 +6,17 @@
         <title>Eoners - @yield('title')</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
-        <h1 class="text-4xl font-bold text-center mt-20">
-         Tailwind v4 funcionando en Laravel
-        </h1>
-    </h1>
+    <body class="bg-gray-100 ">
+        <header class="p-5 border-b bg-white shadow">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-4xl font-extrabold uppercase text-blue-800">
+                    Eoners 
+                </h1>
+                <nav class="flex gap-4 items-center">
+                    <a href="" class="font-bold uppercase text-gray-600 text-sm font-sans">Login</a>
+                    <a href="" class="font-bold uppercase text-gray-600 text-sm font-sans">Crear cuenta</a>
+                </nav>
+            </div>
+        </header>
     </body>
 </html>
