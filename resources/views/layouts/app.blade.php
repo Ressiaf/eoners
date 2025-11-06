@@ -7,14 +7,17 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="bg-gray-100 ">
-        <header class="p-5 border bg-white shadow">
+        <header class="p-5 border-b bg-white shadow">
             <div class="container mx-auto flex justify-between items-center">
                 <h1 class="text-4xl font-extrabold uppercase text-blue-800">
                     Eoners 
                 </h1>
                 <nav class="flex gap-4 items-center">
                     <a href="/login" class="font-bold uppercase text-gray-700 text-sm font-sans">Login</a>
-                    <a href="/register" class="font-bold uppercase text-gray-700 text-sm font-sans">Crear cuenta</a>
+                    <a 
+                        href="{{ route('register') }}" 
+                        class="font-bold uppercase text-gray-700 text-sm font-sans">Crear cuenta
+                    </a>
                 </nav>
             </div>
         </header>
