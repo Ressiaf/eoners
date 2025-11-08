@@ -21,7 +21,7 @@
               <input id="username" type="text" name="username" placeholder="Tu usuario" class="block min-w-0 grow bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
             </div>
             @error('username')
-            <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+            <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
             @enderror
           </div>
         </div>
@@ -32,7 +32,7 @@
             <textarea id="about" name="about" placeholder="Cuéntanos acerca de ti" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-800 sm:text-sm/6"></textarea>
           </div>
           @error('about')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -45,7 +45,7 @@
             <button type="button" class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50">Cambiar</button>
           </div>
           @error('photo')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -67,7 +67,7 @@
             </div>
           </div>
           @error('file-upload')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
       </div>
@@ -83,7 +83,7 @@
           <label for="first-name" class="block text-sm/6 font-medium text-gray-900">Nombre</label>
           <input id="first-name" name="first-name" type="text" placeholder="Ingrese su nombre" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('first-name')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -91,7 +91,7 @@
           <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Apellido</label>
           <input id="last-name" name="last-name" type="text" placeholder="Ingrese su apellido" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('last-name')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -99,7 +99,7 @@
           <label for="email" class="block text-sm/6 font-medium text-gray-900">Correo electrónico</label>
           <input id="email" name="email" type="email" placeholder="nombre@ejemplo.com" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('email')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -109,7 +109,7 @@
             <option>Argentina</option>
           </select>
           @error('country')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -117,7 +117,7 @@
           <label for="street-address" class="block text-sm/6 font-medium text-gray-900">Dirección</label>
           <input id="street-address" name="street-address" type="text" placeholder="Ingrese su dirección" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('street-address')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -125,7 +125,7 @@
           <label for="city" class="block text-sm/6 font-medium text-gray-900">Ciudad</label>
           <input id="city" name="city" type="text" placeholder="Ciudad" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('city')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -133,7 +133,7 @@
           <label for="region" class="block text-sm/6 font-medium text-gray-900">Provincia</label>
           <input id="region" name="region" type="text" placeholder="Provincia" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('region')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -141,7 +141,7 @@
           <label for="postal-code" class="block text-sm/6 font-medium text-gray-900">Código Postal</label>
           <input id="postal-code" name="postal-code" type="text" placeholder="Código Postal" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('postal-code')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
       </div>
@@ -182,7 +182,7 @@
           <label for="password" class="block text-sm/6 font-medium text-gray-900">Contraseña</label>
           <input id="password" name="password" type="password" placeholder="Ingrese su contraseña" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('password')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
 
@@ -190,7 +190,7 @@
           <label for="password_confirmation" class="block text-sm/6 font-medium text-gray-900">Repetir contraseña</label>
           <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repita su contraseña" class="mt-2 block w-full rounded-md bg-white px-3 py-1.5 outline-gray-300 focus:outline-blue-800"/>
           @error('password_confirmation')
-          <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+          <p class="bg-red-500 text-white my-2 rounded-lg text-sm p2 text-center">{{ $message }}</p>
           @enderror
         </div>
       </div>
