@@ -184,7 +184,7 @@ return [
     |
     | Las siguientes líneas de idioma se utilizan para intercambiar los marcadores de posición de atributo.
     | con algo más fácil de leer, como la dirección de correo electrónico.
-    | de "email". Esto simplemente nos ayuda a hacer los mensajes un poco más limpios.
+    |  de "email". Esto simplemente nos ayuda a hacer los mensajes un poco más limpios.
     |
     */
 
