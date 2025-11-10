@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
 
-class FeedController extends Controller
+class FeedPostController extends Controller
 {
     public function index()
     {
