@@ -12,19 +12,23 @@ Route::get('/', function () {
     return view('init');
 })->name('home');
 
+
 // Rutas de autenticación (públicas)
 Route::middleware('guest')->group(function () {
     // Register
     Route::get('/register', [RegisterController::class, 'index'])->name('register');
     Route::post('/register', [RegisterController::class, 'store']);
-    
+
+
     // Login
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'store']);
 });
 
+
 // Logout (solo para autenticados)
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
+
 
 // Rutas protegidas 
 Route::middleware('auth')->group(function () {
