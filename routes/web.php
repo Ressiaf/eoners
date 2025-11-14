@@ -28,14 +28,7 @@ Route::middleware('guest')->group(function () {
 
 // Logout (solo para autenticados)
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
-
-
-// Rutas protegidas 
-Route::middleware('auth')->group(function () {
-    // Feed principal
-    Route::get('/feed', [FeedPostController::class, 'index'])->name('feed');
-    
-    // Publicaciones
+Route::get('/feed', [FeedPostController::class, 'index'])->name('feed');
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
     
@@ -43,4 +36,17 @@ Route::middleware('auth')->group(function () {
     Route::post('/posts/{post}/like', [PostController::class, 'like'])->name('posts.like');
     Route::post('/posts/{post}/comment', [PostController::class, 'comment'])->name('posts.comment');
     Route::post('/posts/{post}/share', [PostController::class, 'share'])->name('posts.share');
-});
+// Rutas protegidas 
+// Route::middleware('auth')->group(function () {
+//     // Feed principal
+//     Route::get('/feed', [FeedPostController::class, 'index'])->name('feed');
+    
+//     // Publicaciones
+//     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+//     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+    
+//     // Interacciones con posts
+//     Route::post('/posts/{post}/like', [PostController::class, 'like'])->name('posts.like');
+//     Route::post('/posts/{post}/comment', [PostController::class, 'comment'])->name('posts.comment');
+//     Route::post('/posts/{post}/share', [PostController::class, 'share'])->name('posts.share');
+// });
