@@ -197,7 +197,6 @@
     </div>
 
   </div>
-//SUBMIT 
   <div class="mt-6 mr-10 flex items-center justify-end gap-x-6">
     <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancelar</button>
     <button type="submit" class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50">Completar registro</button>
